@@ -3,7 +3,7 @@
 This repository contains my resume, built using LaTeX for professional formatting.
 
 ## 📄 Preview
-[Maithri Chenna Example Resume.pdf](https://github.com/maithrichenna1/My-LaTex-Resume/blob/main/Maithri Chenna Example Resume.pdf) 
+[Resume.pdf](https://github.com/maithrichenna1/My-LaTex-Resume/blob/main/Resume.pdf) 
 
 ## 📌 Credits
 This resume template is based on ASU-sparkysundevil-resume-template by Author: Vignesh Iyer.  
