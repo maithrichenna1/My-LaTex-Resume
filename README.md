@@ -3,6 +3,7 @@
 This repository contains my resume, built using LaTeX for professional formatting.
 
 ## 📄 Preview
+This is an example resume 
 [Resume.pdf](https://github.com/maithrichenna1/My-LaTex-Resume/blob/main/Resume.pdf) 
 
 ## 📌 Credits
