@@ -1,0 +1,207 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Author: Vignesh Iyer                                 %
+% MS CSE ASU                                           %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% -------------- README --------------
+% Visit https://github.com/vgnshiyer/ASU-sparkysundevil-resume-template for comprehensive documenation.
+
+% -------------- Resume ---------------
+\documentclass{resume}
+\newkeycommand{\educationItem}[
+    university,
+    college,
+    program,
+    graduation,
+    grade,
+    coursework
+]{%
+    {% line 1
+        \bf \commandkey{program}%
+    } \hfill {%
+    \commandkey{graduation}%
+    } \\ % line end
+    {% line 2
+        \commandkey{university}%
+    } \hfill \ifcommandkey{grade}{% Grade field is optional (Can be left empty)
+        \commandkey{grade}%
+    }{} \\ % line end
+    % {% line 3
+    %     \commandkey{college}  <--- Like this
+    % } \\ % line end
+    {% line 4
+        Relevant coursework: \commandkey{coursework}%
+    }% line end
+}%
+
+
+\begin{document}
+
+% --------- Contact Information -----------
+\introduction[
+    fullname={Maithri Chenna},
+    email={maithri.chenna22@alumni.colostate.edu},
+    phone={970-914-1984},
+    linkedin={linkedin.com/in/maithric},
+    github={github.com/maithrichenna1}
+]
+
+% --------- Summary -----------
+\summary{Analyst with expertise in market risk, liquidity risk, and financial modeling. Strong background in VaR, stress testing, back testing, and leverage analysis. Skilled in Python, SQL, and Excel to develop risk analytics, automate reporting, and optimize financial decision making. Proven ability to collaborate across teams to improve risk governance, regulatory compliance, and portfolio risk management.}
+
+% --------- Education ---------
+\begin{educationSection}{Education}
+    \educationItem[
+        university={Colorado State University, Fort Collins, CO},
+        college={College of Business},
+        graduation={May 2022},
+        program={M.Sc., Financial Mathematics},
+        coursework={Quantitative Methods, Advances in FinTech, Financial Modeling and Alternative Investments},
+    ]
+\end{educationSection}
+
+% --------- Skills -----------
+\begin{skillsSection}{SKILLS}
+    \skillItem[
+        category={Financial Analysis},
+        skills={VaR, Stress Testing, Backtesting, Liquidity Risk, Leverage Analysis}
+    ] \\
+    \skillItem[
+        category={Financial Tools},
+        skills={Microsoft Office Excel (Advanced), Tableau, Refinitiv, Bloomberg, Tradeweb, FactSet}
+    ] \\
+    \skillItem[
+        category={Programming \& Data Analysis},
+        skills={SQL, R Studio \& Python}
+    ] \\
+    \skillItem[
+        category={Automation \& Process Optimization},
+        skills={Workflow Automation, Financial Modeling, Data Reconciliation}
+    ]
+\end{skillsSection}
+
+% --------- Experience -----------
+\begin{experienceSection}{Professional Experience}
+    \experienceItem[
+        position={Analyst- Analytics/ IRRM},
+        location={San Jose, CA},
+        company={Bayview Asset Management},
+        duration={Aug 2022 – Present}
+    ]
+    \begin{itemize}
+        \itemsep -6pt {}
+        \item Monitored and reported market risk metrics, including VaR, stress testing, and backtesting, ensuring portfolio risk alignment with investment strategies.
+        \item Developed Python- and SQL-based risk analytics dashboards to improve liquidity risk tracking and reporting.
+         \item Conducted liquidity risk assessments on mortgage-backed securities, analyzing cash flow impact and leverage exposure. 
+        \item Oversaw daily margin calls across all funds for a \$20.2 billion AUM portfolio, ensuring adequate risk mitigation and liquidity management. 
+        \item Delivered daily, quarterly, and annual P\&L and  DV01 reports to VPs, Managing Directors, and Portfolio Managers, providing key insights to support strategic decision-making and financial planning.
+        \item Partnered with cross-functional teams (Middle Office, Accounting, Portfolio Management) to streamline reconciliation, trade settlement, and invoice payments. 
+        \item Partnered with risk and compliance teams to enhance governance and SEC derivatives reporting.
+        \item Shared best practices to enhance team efficiency and fostered strong relationships with colleagues.      
+    \end{itemize}
+
+    \experienceItem[
+        position={Senior Product Analyst},
+        location={Telangana, India},
+        company={FactSet},
+        duration={Jan 2020 – Aug 2021}
+    ]
+    \begin{itemize}
+        \itemsep -6pt {}
+        \item  Optimized regression testing workflows, eliminating redundant processes and enhancing efficiency by 25\%.
+        \item Caught bugs by analyzing the results/ changes caused due to code changes during Mainline regression testing.
+        \item Developed SQL queries to streamline enhancement testing, reducing turnaround time for client reports.
+        \item Handled Analytical queries from clients, as a curator, and delivered quick and reliable solutions to the clients.
+        \item Worked on projects which required rigorous analytical impact testing on Enhancements.
+    \end{itemize}
+
+       \experienceItem[
+        position={Bank Loans Analyst},
+        location={Telangana, India},
+        company={Invesco},
+        duration={Sep 2015 – May 2018}
+    ]
+    \begin{itemize}
+        \itemsep -6pt {}
+        \item Collaborated with trustees, agents, and closers to resolve cash and position reconciliation breaks, ensuring accurate financial reporting and timely settlements.
+        \item Resolved trade settlement delays by proactively following up with third parties.
+        \item Designed NAV analysis report which facilitates portfolio managers understand the NAVs trend.
+        \item Reconciled and investigated monthly collateral loan obligations (CLO) compliance reports to facilitate smooth compliance reporting.
+        \item Analyzed and validated financial reporting schedules to ensure accuracy, supporting auditors and regulatory compliance.
+% Assisted in review, analysis, and implementation of Power BI based dashboards.
+
+        
+    \end{itemize}
+
+\end{experienceSection}
+
+% --------- Projects -----------
+\begin{experienceSection}{projects}
+    \projectItem[
+        title={Data-Driven Analysis of MSR Hedging: Evaluating Mortgage Backed Sercurities (MBS) Pool Buying}
+        ,keyHighlight={In Preparation for Submission at Financial Analysts Journal, 2025}
+        ]
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+        \item Conducted quantitative analysis on MBS pool purchases as a hedge against MSR prepayment risk.
+        \item Evaluated historical data to compare MBS pool performance with TBA hedging in stabilizing cash flows.      
+        
+    \end{itemize}
+
+    \projectItem[
+        title=Inceptive Investors: Honorary Thesis on Investment behaviour,
+        duration=Mar 2015,
+        ,keyHighlight={Analyzed early-career professionals' investment preferences using predictive modeling.}
+        ]
+    \begin{itemize}
+        \vspace{-0.5em}
+        \itemsep -6pt {}
+        \item Designed and executed a structured survey to analyze investment preferences among early-career professionals, evaluating risk appetite, asset allocation tendencies, and behavioral biases.
+        \item Developed predictive linear regression models to quantify the impact of demographic and psychological factors on investment decisions, addressing key research gaps in investor behavior.
+    \end{itemize}
+\end{experienceSection}
+
+% --------- Other work experience -----------
+\begin{experienceSection}{Other work experience}
+    \experienceItem[
+        position={Teaching Assistant},
+        location={Fort Collins, CO},
+        company={Colorado State University, (20 hours/week)},
+        duration={Aug 2021 – May 2022}
+    ]
+    \begin{itemize}
+        \vspace{-0.2em}
+        \itemsep -6pt {}
+        \item Provided clear and concise explanations of financial concepts, enhancing student understanding and engagement for courses Personal Finance \& Investing (FIN 200) and Risk Management \& Insurance (FIN 342).
+        \item Evaluated student assignments and provided detailed and constructive feedback to enhance learning.
+        \item Collected data and proofread finance research journals for accuracy and clarity before submission.
+    \end{itemize}
+
+    \experienceItem[
+        position={Bank loans Analyst (Intern)},
+        location={Denver, CO},
+        company={Invesco, (20 hours/week)},
+        duration={Jan 2022 – Apr 2022}
+    ]
+    \begin{itemize}
+        \vspace{-0.2em}
+        \itemsep -6pt {}
+        \item Collaborated with trustees and agents to resolve reconciliation breaks via root cause analysis.
+        \item Assisted in reporting and tracking syndicated bank loans for compliance.
+    \end{itemize}
+\end{experienceSection}
+
+% --------- Awards, Certifications & Interests -----------
+\begin{skillsSection}{awards, certifications \& Interests}
+    \skillItem[
+        category={AWARDS},
+        skills={Blue Ribbon – FactSet (2020), Lions Lair Finalist – Invesco, Appreciation – Invesco (2016, 2017)}
+    ] \\
+    \skillItem[
+        category={Certifications \& Training},
+        skills={Financial Planning \& Analysis (FP\&A) by CFI, FRM Part 1 Candidate}
+    ]
+\end{skillsSection}
+
+\end{document}
