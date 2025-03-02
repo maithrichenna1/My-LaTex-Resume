@@ -4,7 +4,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{resume}[2023/01/11 v0.2 Resume class]
+\ProvidesClass{resume}[2025/03/02 v0.2 Resume class]
 
 \LoadClass[11pt,letterpaper]{article} % Font size and paper type
 
